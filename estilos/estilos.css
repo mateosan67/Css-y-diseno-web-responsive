@@ -1,0 +1,419 @@
+@-webkit-keyframes miAnimacion{
+    0%{
+        margin: 150%;
+    }
+    60%{
+        margin: -5%;
+    }
+    100%{
+        margin: 0%;
+    }
+}
+@font-face{
+    font-family: "Dancing Script";
+    src: url("dancing.otf")
+}
+body{
+    margin: 0 auto;
+    width: 100%;
+    font-family: 'Dancing Script','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+img{
+    box-shadow: 2px 2px 2px #02010a;
+}
+header{
+    background: #5b7989;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 10px 10px 0px 0px;
+    animation: miAnimacion 3s;
+
+}
+p{
+    text-align: justify;
+    font-size: 12px;
+}
+#principal{
+    float: left;
+    margin: 30px;
+    color: white;
+    text-shadow: 2px 2px #02010a;
+    width: 50%;
+}
+nav{
+    width: 20%;
+    float: right;
+    margin: 35px 80px 20px 0px;
+}
+#menu{
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 40px 20px 0px 0px;
+}
+.elementomenu{
+    flex-grow: 1;
+    flex-basis: 30%;
+    color: white;
+}
+.elementomenu1{
+    flex-grow: 1;
+    flex-basis: 30%;
+    color: white;
+    text-decoration: none;
+}
+#imagencentral{
+    display: flex;
+    flex-flow: row nowrap;
+    background: #82c3a6;
+}
+#central{
+    flex-grow: 2;
+    order:2;
+    width: 20%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.centrado1{
+    flex-grow: 1;
+    order: 1;
+}
+.centrado2{
+    flex-grow: 1;
+    order: 3;
+}
+#secundarias{
+    display: flex;
+    flex-flow: row nowrap;
+    background: #d5c75f ;
+    border: 1px solid black;
+}
+#secundaria1{
+    flex-grow: 1;
+    order: 1;
+    margin:10px;
+    box-shadow: 2px 2px 2px #02010a;
+}
+#secundaria1:hover{
+    transform: rotate(10deg);
+    border: 2px inset #82c3a6;
+}
+#secundaria2{
+    flex-grow: 1;
+    order: 2;
+    margin: 10px;
+    box-shadow: 2px 2px 2px #02010a;
+}
+#secundaria2:hover{
+    transform: translate(20px, -5px);
+    border: 2px groove #82c3a6;
+}
+.imagen2{
+    width: 100%;
+    height: 100%;
+}
+footer{
+    background: #C6d5c5;
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 0px 0px 10px 10px;
+}
+#pie{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.columnapie1{
+    flex-grow: 1;
+    order: 1;
+}
+.columnapie2{
+    flex-grow: 1;
+    order: 2;
+}
+.columnapie3{
+    flex-grow: 1;
+    order: 3;
+}
+.columnapie4{
+    flex-grow: 1;
+    order: 4;
+}
+#politica{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+div[class^='columnapie']{
+    flex-basis: 25%;
+}
+.columnapie1 p, .columnapie1 h4{
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+.redes{
+    text-align: center;
+}
+.columnapie4 p{
+    text-align: center;
+}
+#galeria{
+    display: flex;
+    flex-flow: row nowrap;
+    background: #d5c75f ;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.img1{
+    width:50%;
+    order:1;
+    flex-grow: 1;
+    margin: 20px;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+    animation: miAnimacion 0s;
+}
+.img2{
+    width:50%;
+    order:2;
+    flex-grow: 1;
+    margin:20px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%)
+}
+.img3{
+    width:50%;
+    order:3;
+    flex-grow: 1;
+    margin: 20px;
+    -webkit-filter: sepia(90%);
+    filter: sepia(90%);
+}
+#galeria2{
+    display: flex;
+    flex-flow: row nowrap;
+    background: #d5c75f ;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.img4{
+    width:50%;
+    order:1;
+    flex-grow: 1;
+    margin: 20px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%)
+}
+.img5{
+    width:50%;
+    order:2;
+    flex-grow: 1;
+    margin:20px;
+}
+.img6{
+    width:50%;
+    order:3;
+    flex-grow: 1;
+    margin: 20px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%)
+}
+@media (max-width: 500px){
+    nav{
+        width: 100%;
+        margin: 0 auto;
+    }
+    #principal{
+        margin: 10px;
+        color: white;
+        text-shadow: 2px 2px #02010a;
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+        margin-top: 25px;
+    }
+    #menu{
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 0 auto;
+  
+    }
+    .elementomenu{
+        flex-grow: 1;
+        flex-basis: 30%;
+        color: white;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .elementomenu1{
+        flex-grow: 1;
+        flex-basis: 30%;
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    header{
+        background: #5b7989;
+        width: 100%;
+        height: 110px;
+        margin: 0 auto;
+        border-radius: 10px 10px 0px 0px;
+    }
+    #secundarias{
+        display: flex;
+        flex-flow: column nowrap;
+        background: #d5c75f ;
+        border: 1px solid black;
+    }
+    #secundaria1{
+        flex-grow: 1;
+        order: 1;
+        width: 50%;
+        margin:0 auto;
+        margin-top: 10px;
+    }
+    #secundaria2{
+        flex-grow: 1;
+        order: 2;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }  
+    footer{
+        background: #C6d5c5;
+        width: 100%;
+        height: 800px;
+        margin: 0 auto;
+        border-radius: 0px 0px 10px 10px;
+    }
+    #pie{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .columnapie1{
+        flex-grow: 1;
+        order: 1;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .columnapie2{
+        flex-grow: 1;
+        order: 2;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .columnapie3{
+        flex-grow: 1;
+        order: 3;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .columnapie4{
+        flex-grow: 1;
+        order: 4;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    #politica{
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    div[class^='columnapie']{
+        flex-basis: 25%;
+    }
+    .columnapie1 p, .columnapie1 h4{
+        text-align: center;
+    }
+    h4{
+        text-align: center;
+    }
+    .redes{
+        text-align: center;
+    }
+    .columnapie4 p{
+        text-align: center;
+    }
+    #copy{
+        width: 5%;
+        margin-left: 150px;
+    } 
+    #galeria{
+        display: flex;
+        flex-flow: column nowrap;
+        background: #d5c75f ;
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+    .img1{
+        width:80%;
+        order:1;
+        flex-grow: 1;
+        margin: 0 auto;
+        -webkit-filter: blur(10px);
+        filter: blur(10px);
+        margin-top: 15px; 
+    }
+    .img2{
+        width:80%;
+        order:2;
+        flex-grow: 1;
+        margin:0 auto;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        margin-top: 15px;
+    }
+    .img3{
+        width:80%;
+        order:3;
+        flex-grow: 1;
+        margin: 0 auto;
+        -webkit-filter: sepia(90%);
+        filter: sepia(90%);
+        margin-top: 15px;
+    }
+    #galeria2{
+        display: flex;
+        flex-flow: column nowrap;
+        background: #d5c75f ;
+        border-bottom: 1px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+    .img4{
+        width:80%;
+        order:1;
+        flex-grow: 1;
+        margin: 0 auto;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        margin-top: 15px;
+    }
+    .img5{
+        width:80%;
+        order:2;
+        flex-grow: 1;
+        margin:0 auto;
+        margin-top: 15px;
+    }
+    .img6{
+        width:80%;
+        order:3;
+        flex-grow: 1;
+        margin: 0 auto;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
